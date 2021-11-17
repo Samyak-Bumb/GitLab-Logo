@@ -1,0 +1,91 @@
+*{margin:0;padding:0}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  background:#30353e;
+  width:100vw;
+  height:100vh;
+  display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  .gitlab{
+    width:300px;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    &:before{
+        position:absolute;
+        content: '';
+        font-size: 2em;
+        color: #8c929d;
+        text-align:center;
+        top: 390px;
+        margin-left: 80px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .triangel_left {
+        width: 0;
+        height: 0;
+        left: 35px;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 80px solid #e2432b;
+        position:relative;
+      &:before{
+        position:absolute;
+        content: '';
+        z-index:5;
+        top: 80px;
+        left: 30px;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 55px solid transparent;
+        border-top: 168px solid #e2432b;
+      }
+    }
+    .triangel_right {
+        width: 0;
+        height: 0;
+        top: -170px;
+        margin-left: -85px;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 80px solid #e2432b;
+    }
+    .triangel_center {
+        width: 0;
+        height: 0;
+        margin-top: 130px;
+        margin-left: -45px;
+        border-left: 120px solid transparent;
+        border-right: 140px solid transparent;
+        border-top: 120px solid #efa221;
+        position:relative;
+      &:before{
+        position:absolute;
+        content: '';
+        top: -170px;
+        left: -120px;
+        height: 0;
+        width: 215px;
+        border-bottom: 50px solid #efa221;
+        border-left: 20px solid transparent;
+        border-right: 25px solid transparent;
+      }
+      &:after{
+        position:absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        top: -170px;
+        margin-left: -100px;
+        border-left: 100px solid transparent;
+        border-right: 116px solid transparent;
+        border-top: 170px solid #e96b28;
+        opacity:.5;
+      }
+    }
+  }
+}
